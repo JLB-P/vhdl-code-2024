@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/repo/my-vhdl-code/sistema_combi/sistema_combi.runs/synth_1'
+HD_PWD='C:/repo/vhdl-code-2024/sistema_combinacional/sistema_combinacional.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log bcd_7seg.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bcd_7seg.tcl
+EAStep vivado -log sistema_combinacional_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sistema_combinacional_top.tcl

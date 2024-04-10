@@ -41,7 +41,7 @@ architecture Behavioral of bcd_7seg is
 
 begin
    with in_bcd select
-   a_to_g<= "1111001" when "0001",   --1
+   a_to_g<= "1111001" when "0001", --1 gfedcba
          "0100100" when "0010",   --2
          "0110000" when "0011",   --3
          "0011001" when "0100",   --4
